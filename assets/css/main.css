@@ -3375,25 +3375,6 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-
-/* Banner.style2 */
-#banner.style2 {
-    padding: 3em 0; /* Adjust padding for top and bottom space */
-}
-
-#banner.style2 .inner {
-    max-width: 100%; /* Ensure image does not exceed parent width */
-    text-align: center; /* Center the image */
-}
-
-#banner.style2 img {
-    max-width: 100%; /* Ensure image stays within container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-
-
-
 /* Banner */
 
 	#banner {
