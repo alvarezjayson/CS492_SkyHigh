@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("Images/picbg.png");
+		background-image: url("Images/picbg05.png"), url("Images/picbg06.png");
 		background-attachment: scroll;
 		background-repeat: no-repeat;
  cover;
