@@ -33,14 +33,16 @@ h1 {
 
 .flight .flight-number {
     font-weight: bold;
+       color: #333;
 }
 
 .flight .flight-status {
     float: right;
+       color: #333;
 }
 
 .flight .flight-time {
-    color: #666;
+    color: #333;
 }
 
 .flight .delayed {
