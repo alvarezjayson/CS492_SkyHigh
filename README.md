@@ -18,14 +18,14 @@ SkyHigh Airlines is looking to expand its markets to online shoppers all over th
   * Support payments by credit card only. The system will support flight cancellations with notifications to all customers. 
   * The system will be able to keep track of agents and the sales for each agent. 
 ## Team Members
-  Adam Blakely - Quality Assurance / Dev Team
-  Ellix Daniels - UI/UX Developer
-  Jayson Alvarez - Project Manager / Dev Team
-  Stephanie Teague - Lea Developer
-  James Badura - Database Administrator
+  * Adam Blakely - Quality Assurance / Dev Team
+  * Ellix Daniels - UI/UX Developer
+  * Jayson Alvarez - Project Manager / Dev Team
+  * Stephanie Teague - Lea Developer
+  * James Badura - Database Administrator
 ## Technologies
-* Discord (Team Communication)
-* OneDrive (Documentation Collaboration)
-* GitHub (Repository Hosting)
+  * Discord (Team Communication)
+  * OneDrive (Documentation Collaboration)
+  * GitHub (Repository Hosting)
 
 ## Usage instructions
