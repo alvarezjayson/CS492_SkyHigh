@@ -21,7 +21,7 @@ SkyHigh Airlines is looking to expand its markets to online shoppers all over th
   * Adam Blakely - Quality Assurance / Dev Team
   * Ellix Daniels - UI/UX Developer
   * Jayson Alvarez - Project Manager / Dev Team
-  * Stephanie Teague - Lea Developer
+  * Stephanie Teague - Lead Developer
   * James Badura - Database Administrator
 ## Technologies
   * Discord (Team Communication)
