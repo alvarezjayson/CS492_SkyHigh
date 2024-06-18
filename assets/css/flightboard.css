@@ -1,1 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
+.flight-status-board {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.flight {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.flight:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.flight .flight-number {
+    font-weight: bold;
+}
+
+.flight .flight-status {
+    float: right;
+}
+
+.flight .flight-time {
+    color: #666;
+}
+
+.flight .delayed {
+    color: red;
+}
