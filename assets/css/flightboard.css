@@ -3,6 +3,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    color: #333; /* Set default text color for the entire page */
 }
 
 .flight-status-board {
@@ -12,16 +13,18 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Set text color specifically for the flight status board */
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #333; /* Keep the h1 text color consistent */
 }
 
 .flight {
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
+    color: #333; /* Ensure flight text color is black */
 }
 
 .flight:nth-child(even) {
