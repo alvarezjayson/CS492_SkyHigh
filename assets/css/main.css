@@ -99,9 +99,9 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto,
+		background-image: url("https://www.shutterstock.com/image-photo/closeup-front-corporate-jet-260nw-746596807.jpg");
+		background-attachment: scroll;
+		background-repeat: no-repeat;
  cover;
 		background-attachment: fixed,
  fixed;
