@@ -9,7 +9,6 @@
 * [Usage instructions](#usage-instructions)
 * [Team Members](#team-members)
 * [Contact Information](#contact-information)
-* [Other Information](#other-information)
 
 ## Project Description
 SkyHigh Airlines is looking to expand its markets to online shoppers all over the world. We hope to achieve this goal of providing a seamless user experience with implementing an online reservation system. The main features of the system include the following: 
