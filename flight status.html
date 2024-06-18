@@ -9,6 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/flightboard.css" />
     <link rel="stylesheet" href="assets/css/noscript.css" /> <!-- Ensure this is included -->
     <style>
         body {
@@ -49,146 +50,17 @@
             </div>
         </nav>
 
-        <!-- Banner -->
-        <section id="banner">
-            <div class="inner">
-                <div class="logo"><img src="Images/logo.jpg" alt="Custom Icon" class="icon"></div>
-                <h2>SkyHigh Airlines</h2>
-                <p>"Wander the Skies with us!"</p>
-            </div>
-        </section>
+        </head>
+<body>
+    <div class="flight-status-board">
+        <h1>Flight Status Board</h1>
+        <div id="flights">
+            <!-- Flight information will be dynamically added here -->
+        </div>
+    </div>
 
-       <!-- Flight Status Section -->
-        <section id="flight-status" class="wrapper style1">
-            <div class="inner">
-                <h2 class="major">Flight Status</h2>
-
-                <!-- Flight Status List -->
-                <div class="flight">
-                    <h3>Paris, France</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> New York, United States</li>
-                        <li><strong>Arrival:</strong> Paris, France</li>
-                        <li><strong>Status:</strong> On Time</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>London, England</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Dubai, United Arab Emirates</li>
-                        <li><strong>Arrival:</strong> London, England</li>
-                        <li><strong>Status:</strong> Delayed</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>New York, United States</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Los Angeles, United States</li>
-                        <li><strong>Arrival:</strong> New York, United States</li>
-                        <li><strong>Status:</strong> On Time</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>Los Angeles, United States</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Tokyo, Japan</li>
-                        <li><strong>Arrival:</strong> Los Angeles, United States</li>
-                        <li><strong>Status:</strong> Delayed</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>Tokyo, Japan</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Bangkok, Thailand</li>
-                        <li><strong>Arrival:</strong> Tokyo, Japan</li>
-                        <li><strong>Status:</strong> On Time</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>Dubai, United Arab Emirates</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Fiji, Melanesia</li>
-                        <li><strong>Arrival:</strong> Dubai, United Arab Emirates</li>
-                        <li><strong>Status:</strong> On Time</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>Bangkok, Thailand</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Sydney, Australia</li>
-                        <li><strong>Arrival:</strong> Bangkok, Thailand</li>
-                        <li><strong>Status:</strong> On Time</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>Fiji, Melanesia</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> Paris, France</li>
-                        <li><strong>Arrival:</strong> Fiji, Melanesia</li>
-                        <li><strong>Status:</strong> Delayed</li>
-                    </ul>
-                </div>
-
-                <div class="flight">
-                    <h3>Sydney, Australia</h3>
-                    <ul>
-                        <li><strong>Departure:</strong> London, England</li>
-                        <li><strong>Arrival:</strong> Sydney, Australia</li>
-                        <li><strong>Status:</strong> On Time</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-        <!-- Footer -->
-        <section id="footer">
-            <div class="inner">
-                <h2 class="major">Get in touch</h2>
-                <p>Have questions or feedback? Contact us for assistance.</p>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
-                <ul class="contact">
-                    <li class="icon solid fa-home">
-                        SkyHigh Airlines<br />
-                        1234 Airline Road Suite #123<br />
-                        SkyCity, SK 98765
-                    </li>
-                    <li class="icon solid fa-phone">(800) 123-4567</li>
-                    <li class="icon solid fa-envelope"><a href="mailto:info@skyhighairlines.com">info@skyhighairlines.com</a></li>
-                    <li class="icon brands fa-twitter"><a href="https://twitter.com/skyhighairlines">twitter.com/skyhighairlines</a></li>
-                    <li class="icon brands fa-facebook-f"><a href="https://facebook.com/skyhighairlines">facebook.com/skyhighairlines</a></li>
-                    <li class="icon brands fa-instagram"><a href="https://instagram.com/skyhighairlines">instagram.com/skyhighairlines</a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; SkyHigh Airlines. All rights reserved.</li><li>Design: Group 1 Development</li>
-                </ul>
-            </div>
-        </section>
-
+    <script src="flightboard.js"></script>
+</body>
     </div>
 
     <!-- Scripts -->
