@@ -115,3 +115,35 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
+
+    <script>
+    // JavaScript for form validation
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('signup-form');
+
+        form.addEventListener('submit', function(event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Validate form fields
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value;
+
+            if (name === '' || email === '' || password === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // If all fields are filled, you can proceed with form submission here
+            // Example: form.submit();
+
+            // For demonstration, alert success message
+            alert('Sign up successful!');
+        });
+    });
+</script>
+
+</body>
+</html>
