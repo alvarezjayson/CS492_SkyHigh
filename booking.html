@@ -82,6 +82,10 @@
         padding: 0;
         z-index: 1001; /* Ensure close button is on top of modal content */
     }
+        
+        .payment-form-modal .close-btn:hover {
+            color: #888; /* Darken close button on hover */
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -201,7 +205,7 @@
                 </div>
             </form>
             <div id="paymentResult"></div>
-            <button class="close-btn" onclick="closePaymentModal()">Close</button>
+
         </div>
     </div>
 
