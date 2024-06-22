@@ -1,76 +1,93 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>SkyHigh Airlines - Book a Flight</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        /* Your existing styles */
+    <head>
+        <title>SkyHigh Airlines - Book a Flight</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <title>CSS background-image</title>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+         <style>
         body {
             background-image: url("Images/picbg05.png");
             /* Optionally, you can adjust background properties */
             background-size: cover; /* Cover the entire viewport */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
-        }
 
-        /* Modal styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            overflow: auto; /* Enable scrolling if needed */
-        }
-
-        .modal-content {
-            background-color: #ffffff; /* White background for modal content */
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for the modal */
-            color: #000000; /* Black text color */
-        }
-
-        .modal-content label {
-            color: #000000; /* Black text color for labels */
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
     </style>
-</head>
+    </head>
 <body class="is-preload">
 
 <!-- Page Wrapper -->
 <div id="page-wrapper">
 
-    <!-- Header, Menu, Banner sections are as per your original HTML -->
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1><a href="index.html">SkyHigh Airlines</a></h1>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Book a Flight</a></li>
+                    <li><a href="flight status.html">Flight Status</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+            <a href="#" class="close">Close</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+             <div class="logo"><img src="Images/logo.jpg" alt="Custom Icon" class="icon"></div>
+            <h2>Book a Flight</h2>
+            <p>"Your journey begins here with SkyHigh Airlines."</p>
+        </div>
+    </section>
+
+
+     <section id="wrapper">
+
+                <!-- One -->
+                <section id="one" class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="#" class="image"><img src="Images/pic008.jpg" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">Discover the World!</h2>
+                            <p>We fly to over 100 destinations across the globe, connecting you seamlessly to the most breathtaking cities, tranquil beaches, and cultural gems. Whether you're longing for a European escapade, an exotic Asian retreat, or a sun-soaked getaway, our extensive network ensures your travel dreams become reality.</p>
+                            
+                        </div>
+                    </div>
+                </section>
+
+          <!-- Two -->
+                <section id="two" class="wrapper alt spotlight style2">
+                    <div class="inner">
+                        <a href="#" class="image"><img src="Images/pic009.jpg" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">Luxury Travel Experiences</h2>
+                            <p>Indulge in luxury travel experiences with SkyHigh Airlines. Unmatched comfort and service await you.</p>
+
+                        </div>
+                    </div>
+                </section>
 
     <!-- Main Content -->
     <section id="main" class="wrapper style1">
         <div class="inner">
             <h2 class="major">Flight Reservation</h2>
-            <form id="bookingForm" method="post" action="#">
+            <form method="post" action="#">
                 <div class="fields">
                     <div class="field half">
                         <label for="from">Departure Airport</label>
@@ -81,7 +98,7 @@
                         <input type="text" name="to" id="to" required />
                     </div>
                     <div class="field half">
-                        <label for="date">Departure Date</label>
+                        <label for="date" >Departure Date</label>
                         <input type="date" name="date" id="date" required />
                     </div>
                     <div class="field half">
@@ -110,67 +127,45 @@
                     </div>
                 </div>
                 <ul class="actions">
-                    <li><input type="button" value="Book Now" class="primary" onclick="openPaymentModal()" /></li>
+                    <li><input type="submit" value="Book Now" class="primary" /></li>
                     <li><input type="reset" value="Reset" /></li>
                 </ul>
             </form>
         </div>
     </section>
 
-    <!-- Modal for Payment Information -->
-    <div id="paymentModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closePaymentModal()">&times;</span>
-            <h2>Payment Information</h2>
-            <form id="paymentForm" method="post" action="#">
-                <!-- Payment information fields (e.g., credit card details) -->
-                <div class="field">
-                    <label for="cardNumber">Card Number</label>
-                    <input type="text" name="cardNumber" id="cardNumber" required />
-                </div>
-                <div class="field">
-                    <label for="expiry">Expiry Date</label>
-                    <input type="text" name="expiry" id="expiry" placeholder="MM/YYYY" required />
-                </div>
-                <div class="field">
-                    <label for="cvv">CVV</label>
-                    <input type="text" name="cvv" id="cvv" required />
-                </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Submit Payment" class="primary" /></li>
-                </ul>
-            </form>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="inner">
+            <h2 class="major">Get in touch</h2>
+            <p>Have questions or feedback? Contact us for assistance.</p>
+            <ul class="contact">
+                <li class="icon solid fa-home">
+                    SkyHigh Airlines<br />
+                    1234 Airline Road Suite #123<br />
+                    SkyCity, SK 98765
+                </li>
+                <li class="icon solid fa-phone">(800) 123-4567</li>
+                <li class="icon solid fa-envelope"><a href="mailto:info@skyhighairlines.com">info@skyhighairlines.com</a></li>
+                <li class="icon brands fa-twitter"><a href="https://twitter.com/skyhighairlines">twitter.com/skyhighairlines</a></li>
+                <li class="icon brands fa-facebook-f"><a href="https://facebook.com/skyhighairlines">facebook.com/skyhighairlines</a></li>
+                <li class="icon brands fa-instagram"><a href="https://instagram.com/skyhighairlines">instagram.com/skyhighairlines</a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; SkyHigh Airlines. All rights reserved.</li><li>Design: Group 1 Development</li>
+            </ul>
         </div>
-    </div>
-
-    <!-- Footer section is as per your original HTML -->
+    </section>
 
 </div>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
-    // JavaScript for handling the modal and form submission
-
-    // Function to open the payment modal
-    function openPaymentModal() {
-        document.getElementById('paymentModal').style.display = 'block';
-    }
-
-    // Function to close the payment modal
-    function closePaymentModal() {
-        document.getElementById('paymentModal').style.display = 'none';
-    }
-
-    // Form submission handling
-    document.getElementById('paymentForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-        // Here you would handle the actual submission of payment details, possibly using AJAX
-        alert('Payment submitted successfully!'); // Example confirmation alert
-        closePaymentModal(); // Close modal after successful submission
-    });
-</script>
 
 </body>
 </html>
