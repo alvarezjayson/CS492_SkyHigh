@@ -83,7 +83,7 @@
                     </div>
                 </section>
 
-    <!-- Main Content -->
+  <!-- Main Content -->
 <section id="main" class="wrapper style1">
     <div class="inner">
         <h2 class="major">Flight Reservation</h2>
@@ -135,34 +135,35 @@
     </div>
 </section>
 
-          <!-- Payment Modal -->
-    <div id="paymentModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Payment Details</h2>
-            <form id="paymentForm">
-                <div class="field">
-                    <label for="cardName">Name on Card</label>
-                    <input type="text" id="cardName" name="cardName" required />
-                </div>
-                <div class="field">
-                    <label for="cardNumber">Card Number</label>
-                    <input type="text" id="cardNumber" name="cardNumber" required />
-                </div>
-                <div class="field half">
-                    <label for="expirationDate">Expiration Date</label>
-                    <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required />
-                </div>
-                <div class="field half">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" required />
-                </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Submit Payment" class="primary" /></li>
-                </ul>
-            </form>
-        </div>
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <div class="field">
+                <label for="cardName">Name on Card</label>
+                <input type="text" id="cardName" name="cardName" required />
+            </div>
+            <div class="field">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required />
+            </div>
+            <div class="field half">
+                <label for="expirationDate">Expiration Date</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required />
+            </div>
+            <div class="field half">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required />
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Submit Payment" class="primary" /></li>
+            </ul>
+        </form>
     </div>
+</div>
+
 
     <!-- Footer -->
     <section id="footer">
@@ -197,7 +198,8 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-  <script>
+ <!-- Scripts -->
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     // Get the modal
     var modal = document.getElementById('paymentModal');
@@ -224,17 +226,7 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "none";
         }
     }
-
-    // Simulate form submission (for demo purposes)
-    var paymentForm = document.getElementById('paymentForm');
-    paymentForm.onsubmit = function(event) {
-        event.preventDefault(); // Prevent actual form submission for demo
-        // Here you can add code to process the payment
-        alert('Payment submitted! This is a mock action.');
-        modal.style.display = "none"; // Close the modal after "payment"
-    };
 });
 </script>
-
 </body>
 </html>
