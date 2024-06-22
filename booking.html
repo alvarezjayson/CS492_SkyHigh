@@ -196,20 +196,21 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-    <script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
     // Get the modal
     var modal = document.getElementById('paymentModal');
 
     // Get the button that opens the modal
     var btn = document.getElementById("bookNowBtn");
 
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
     }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
@@ -222,6 +223,16 @@
             modal.style.display = "none";
         }
     }
+
+    // Simulate form submission (for demo purposes)
+    var paymentForm = document.getElementById('paymentForm');
+    paymentForm.onsubmit = function(event) {
+        event.preventDefault(); // Prevent actual form submission for demo
+        // Here you can add code to process the payment
+        alert('Payment submitted! This is a mock action.');
+        modal.style.display = "none"; // Close the modal after "payment"
+    };
+});
 </script>
 
 </body>
