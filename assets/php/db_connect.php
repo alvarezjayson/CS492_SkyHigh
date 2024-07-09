@@ -1,7 +1,12 @@
 <?php
+require 'vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 $servername = "localhost";
 $username = "root";
-$password = "your_password";
+$password = "Blakely1814";
 $dbname = "SkyHighDB";
 
 // Create connection
